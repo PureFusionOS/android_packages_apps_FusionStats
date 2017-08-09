@@ -8,8 +8,6 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_PACKAGE_NAME := FusionStats
 LOCAL_CERTIFICATE := platform
 
-LOCAL_JAVA_LIBRARIES += org.apache.http.legacy android-support-v4
-
 include $(BUILD_PACKAGE)
 
 # Use the folloing include to make our test apk.
