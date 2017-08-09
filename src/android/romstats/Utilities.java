@@ -114,7 +114,7 @@ public class Utilities {
 	}
 
 	public static String getRomVersion() {
-		return Const.RR_VERSION;
+		return Const.FUSION_VERSION;
 	}
 
 	public static String getRomVersionHash() {

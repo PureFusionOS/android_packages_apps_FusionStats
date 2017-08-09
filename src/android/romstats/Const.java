@@ -2,7 +2,7 @@ package android.romstats;
 
 public class Const {
 
-	public static final String TAG = "ResurrectionStats";
+	public static final String TAG = "FusionStats";
 
 	public static final String ANONYMOUS_OPT_IN = "pref_anonymous_opt_in";
 	public static final String ANONYMOUS_OPT_OUT_PERSIST = "pref_anonymous_opt_out_persist";
@@ -14,8 +14,8 @@ public class Const {
 	public static final int ROMSTATS_REPORTING_MODE_NEW = 0; // new CM10.1: no user prompt, default TRUE, first time after tframe
 	public static final int ROMSTATS_REPORTING_MODE_OLD = 1; // old CM10  : user prompt, default FALSE, first time immediately
 
-	public static final String STATS_URL = "https://resurrectionremix.sourceforge.io";
-	public static final String RR_VERSION = "5.8.4";
-	public static final String ROMNAME = "ResurrectionRemix";
+	public static final String STATS_URL = "https://stats.purefusionos.com";
+	public static final String FUSION_VERSION = "7.1.2_r33";
+	public static final String ROMNAME = "PureFusionOS";
 	public static final int TIMEFRAME = 1;
 }

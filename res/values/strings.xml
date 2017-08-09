@@ -15,7 +15,7 @@
 -->
 
 <resources>
-    <string name="app_name" translatable="false">RR Stats</string>
+    <string name="app_name" translatable="false">Pure Fusion Stats</string>
 
     <!-- Main -->
     <string name="main_title">Anonymous Usage Data</string>
@@ -76,6 +76,6 @@
     <string name="pref_info_changelog">Change log</string>
     <string name="pref_info_changelog_desc">Show the change log</string>
     <string name="pref_info_website">Google+</string>
-    <string name="pref_info_website_url">https://plus.google.com/u/0/communities/109352646351468373340</string>
+    <string name="pref_info_website_url">https://plus.google.com/u/0/communities/112250185941758695492</string>
 
 </resources>
