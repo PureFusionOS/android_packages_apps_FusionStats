@@ -62,5 +62,5 @@
     <string name="pref_info_changelog">Değişiklik günlüğü</string>
     <string name="pref_info_changelog_desc">Değişiklik günlüğünü göster</string>
     <string name="pref_info_website">Google+</string>
-    <string name="preview_device_codename">Cihaz</string>
+    <string name="preview_codename_title">Cihaz</string>
 </resources>

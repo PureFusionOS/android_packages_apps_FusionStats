@@ -60,5 +60,5 @@
     <string name="pref_info_changelog">Changelog</string>
     <string name="pref_info_changelog_desc">Änderungsprotokoll anzeigen</string>
     <string name="pref_info_website">Google+</string>
-    <string name="preview_device_codename">Gerät</string>
+    <string name="preview_codename_title">Gerät</string>
 </resources>

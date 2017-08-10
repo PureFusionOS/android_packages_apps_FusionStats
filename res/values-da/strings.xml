@@ -58,5 +58,5 @@
     <string name="pref_info_changelog">Ændringslog</string>
     <string name="pref_info_changelog_desc">Vis ændringslog</string>
     <string name="pref_info_website">Google+</string>
-    <string name="preview_device_codename">Enhed</string>
+    <string name="preview_codename_title">Enhed</string>
 </resources>

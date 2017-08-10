@@ -64,7 +64,7 @@
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Unique ID</string>
     <string name="preview_device_title" translatable="false">Model</string>
-    <string name="preview_device_codename">Device</string>
+    <string name="preview_codename_title">Device</string>
     <string name="preview_version_title">Version</string>
     <string name="preview_country_title">Country</string>
     <string name="preview_carrier_title">Carrier</string>

@@ -64,5 +64,5 @@
     <string name="pref_info_changelog">سجل التغييرات</string>
     <string name="pref_info_changelog_desc">إظهار سجل التغيير</string>
     <string name="pref_info_website">غوغل بلس</string>
-    <string name="preview_device_codename">الجهاز</string>
+    <string name="preview_codename_title">الجهاز</string>
 </resources>

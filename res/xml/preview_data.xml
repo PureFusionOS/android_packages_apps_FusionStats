@@ -29,6 +29,11 @@
         android:title="@string/preview_device_title" />
     <Preference
         style="?android:preferenceInformationStyle"
+        android:key="preview_codename"
+        android:summary="%s"
+        android:title="@string/preview_codename_title" />
+    <Preference
+        style="?android:preferenceInformationStyle"
         android:key="preview_version"
         android:summary="%s"
         android:title="@string/preview_version_title" />
