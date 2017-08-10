@@ -23,5 +23,6 @@
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
     <string name="anonymous_statistics_title">Järjestelmätilastot</string>
+    <string name="preview_device_codename"></string>
     <!-- Anonymous Statistics - Preview -->
 </resources>
