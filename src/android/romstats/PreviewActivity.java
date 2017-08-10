@@ -25,6 +25,7 @@ public class PreviewActivity extends PreferenceActivity {
 
     private static final String UNIQUE_ID = "preview_id";
     private static final String DEVICE = "preview_device";
+    private static final String CODENAME = "preview_codename";
     private static final String VERSION = "preview_version";
     private static final String COUNTRY = "preview_country";
     private static final String CARRIER = "preview_carrier";
@@ -43,11 +44,13 @@ public class PreviewActivity extends PreferenceActivity {
 
         prefSet.findPreference(UNIQUE_ID).setSummary(Utilities.getUniqueID(context));
         prefSet.findPreference(DEVICE).setSummary(Utilities.getDevice());
+        prefSet.findPreference(CODENAME).setSummary(Utilities.getDeviceCodename());
         prefSet.findPreference(VERSION).setSummary(Utilities.getModVersion());
         prefSet.findPreference(COUNTRY).setSummary(Utilities.getCountryCode(context));
         prefSet.findPreference(CARRIER).setSummary(Utilities.getCarrier(context));
         prefSet.findPreference(ROMNAME).setSummary(Utilities.getRomName());
         prefSet.findPreference(ROMVERSION).setSummary(Utilities.getRomVersion());
+
     }
 
 }

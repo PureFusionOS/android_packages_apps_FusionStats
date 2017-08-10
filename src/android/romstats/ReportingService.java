@@ -99,6 +99,7 @@ public class ReportingService extends Service {
         protected Boolean doInBackground(Void... params) {
             String deviceId = Utilities.getUniqueID(getApplicationContext());
             String deviceName = Utilities.getDevice();
+            String deviceCodename = Utilities.getDeviceCodename();
             String deviceVersion = Utilities.getModVersion();
             String deviceCountry = Utilities.getCountryCode(getApplicationContext());
             String deviceCarrier = Utilities.getCarrier(getApplicationContext());
@@ -110,7 +111,8 @@ public class ReportingService extends Service {
 
             Log.d(Const.TAG, "SERVICE: Report URL=" + romStatsUrl);
             Log.d(Const.TAG, "SERVICE: Device ID=" + deviceId);
-            Log.d(Const.TAG, "SERVICE: Device Name=" + deviceName);
+            Log.d(Const.TAG, "SERVICE: Device Model=" + deviceName);
+            Log.d(Const.TAG, "SERVICE: Device Name=" + deviceCodename);
             Log.d(Const.TAG, "SERVICE: Device Version=" + deviceVersion);
             Log.d(Const.TAG, "SERVICE: Country=" + deviceCountry);
             Log.d(Const.TAG, "SERVICE: Carrier=" + deviceCarrier);
@@ -127,6 +129,7 @@ public class ReportingService extends Service {
                 List<NameValuePair> kv = new ArrayList<NameValuePair>(5);
                 kv.add(new BasicNameValuePair("device_hash", deviceId));
                 kv.add(new BasicNameValuePair("device_name", deviceName));
+                kv.add(new BasicNameValuePair("device_codename", deviceCodename));
                 kv.add(new BasicNameValuePair("device_version", deviceVersion));
                 kv.add(new BasicNameValuePair("device_country", deviceCountry));
                 kv.add(new BasicNameValuePair("device_carrier", deviceCarrier));

@@ -102,6 +102,10 @@ public class Utilities {
         return SystemProperties.get("ro.product.model");
     }
 
+    public static String getDeviceCodename() {
+        return SystemProperties.get("ro.product.name");
+    }
+
     public static String getModVersion() {
         return SystemProperties.get("ro.build.display.id");
     }
