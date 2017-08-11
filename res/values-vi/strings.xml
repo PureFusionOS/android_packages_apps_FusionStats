@@ -48,7 +48,6 @@
     <string name="btn_no">Không</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">ID duy nhất</string>
-    <string name="preview_device_title">Thiết bị</string>
     <string name="preview_version_title">Phiên bản</string>
     <string name="preview_country_title">Quốc gia</string>
     <string name="preview_carrier_title">Nhà mạng</string>

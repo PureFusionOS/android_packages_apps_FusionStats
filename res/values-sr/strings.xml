@@ -52,7 +52,6 @@
     <string name="btn_no">Не</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Јединствени ИД</string>
-    <string name="preview_device_title">Уређај</string>
     <string name="preview_version_title">Издање</string>
     <string name="preview_country_title">Држава</string>
     <string name="preview_carrier_title">Мобилни оператер</string>

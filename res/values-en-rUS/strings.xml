@@ -51,7 +51,6 @@
     <string name="btn_no">No</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Unique ID</string>
-    <string name="preview_device_title">Device</string>
     <string name="preview_version_title">Version</string>
     <string name="preview_country_title">Country</string>
     <string name="preview_carrier_title">Carrier</string>

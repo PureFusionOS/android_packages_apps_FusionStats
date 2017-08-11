@@ -49,7 +49,6 @@
     <string name="btn_no">Não</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">ID único</string>
-    <string name="preview_device_title">Dispositivo</string>
     <string name="preview_version_title">Versão</string>
     <string name="preview_country_title">País</string>
     <string name="preview_carrier_title">Operadora</string>

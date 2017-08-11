@@ -48,7 +48,6 @@
     <string name="btn_no">नहीं</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">अद्वितीय ID</string>
-    <string name="preview_device_title">उपकरण</string>
     <string name="preview_version_title">संस्करण</string>
     <string name="preview_country_title">देश</string>
     <string name="preview_carrier_title">वाहक</string>

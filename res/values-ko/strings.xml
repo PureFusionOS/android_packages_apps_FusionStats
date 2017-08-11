@@ -48,7 +48,6 @@
     <string name="btn_no">아니오</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">고유 ID</string>
-    <string name="preview_device_title">기기</string>
     <string name="preview_version_title">버전</string>
     <string name="preview_country_title">국가</string>
     <string name="preview_carrier_title">통신사</string>

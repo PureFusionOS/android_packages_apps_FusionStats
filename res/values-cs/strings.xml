@@ -50,7 +50,6 @@
     <string name="btn_no">Ne</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Jedinečné ID</string>
-    <string name="preview_device_title">Zařízení</string>
     <string name="preview_version_title">Verze</string>
     <string name="preview_country_title">Země</string>
     <string name="preview_carrier_title">Operátor</string>

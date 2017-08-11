@@ -52,7 +52,6 @@
     <string name="btn_no">Ne</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Jedinstveni ID</string>
-    <string name="preview_device_title">Uređaj</string>
     <string name="preview_version_title">Verzija</string>
     <string name="preview_country_title">Država</string>
     <string name="preview_carrier_title">Operater</string>

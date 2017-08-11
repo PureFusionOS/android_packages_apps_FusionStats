@@ -48,7 +48,6 @@
     <string name="btn_no">否</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">唯一 ID</string>
-    <string name="preview_device_title">设备</string>
     <string name="preview_version_title">版本</string>
     <string name="preview_country_title">国家</string>
     <string name="preview_carrier_title">运营商</string>

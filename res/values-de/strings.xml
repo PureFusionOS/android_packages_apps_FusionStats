@@ -49,7 +49,6 @@
     <string name="btn_no">Nein</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Eindeutige ID</string>
-    <string name="preview_device_title">Gerät</string>
     <string name="preview_version_title">Version</string>
     <string name="preview_country_title">Land</string>
     <string name="preview_carrier_title">Mobilfunkanbieter</string>

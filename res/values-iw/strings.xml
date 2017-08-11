@@ -49,7 +49,6 @@
     <string name="btn_no">לא</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">מספר מזהה</string>
-    <string name="preview_device_title">התקן</string>
     <string name="preview_version_title">גירסא</string>
     <string name="preview_country_title">מדינה</string>
     <string name="preview_carrier_title">מפעיל</string>

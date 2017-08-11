@@ -51,7 +51,6 @@
     <string name="btn_no">Hayır</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Özgün kimlik</string>
-    <string name="preview_device_title">Cihaz</string>
     <string name="preview_version_title">Sürüm</string>
     <string name="preview_country_title">Ülke</string>
     <string name="preview_carrier_title">Operatör</string>

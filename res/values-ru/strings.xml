@@ -50,7 +50,6 @@
     <string name="btn_no">Нет</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Уникальный идентификатор</string>
-    <string name="preview_device_title">Устройство</string>
     <string name="preview_version_title">Версия</string>
     <string name="preview_country_title">Страна</string>
     <string name="preview_carrier_title">Оператор</string>

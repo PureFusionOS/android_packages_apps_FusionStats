@@ -50,7 +50,6 @@
     <string name="btn_no">Nie</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Unikalny ID</string>
-    <string name="preview_device_title">Urządzenie</string>
     <string name="preview_version_title">Wersja</string>
     <string name="preview_country_title">Kraj</string>
     <string name="preview_carrier_title">Operator</string>

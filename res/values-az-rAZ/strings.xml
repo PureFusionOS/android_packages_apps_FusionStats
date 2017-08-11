@@ -51,7 +51,6 @@
     <string name="btn_no">Xeyr</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Unikal kimlik</string>
-    <string name="preview_device_title">Cihaz</string>
     <string name="preview_version_title">Versiya</string>
     <string name="preview_country_title">Ölkə</string>
     <string name="preview_carrier_title">Operator</string>

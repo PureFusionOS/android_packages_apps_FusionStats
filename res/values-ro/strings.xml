@@ -45,7 +45,6 @@
     <string name="btn_no">Nu</string>
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">ID unic</string>
-    <string name="preview_device_title">Dispozitiv</string>
     <string name="preview_version_title">Versiune</string>
     <string name="preview_country_title">Ţară</string>
     <string name="preview_carrier_title">Operator</string>
