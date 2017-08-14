@@ -81,9 +81,9 @@ public class AnonymousStats extends PreferenceActivity implements
         PreferenceScreen prefSet = getPreferenceScreen();
         mPrefs = this.getSharedPreferences(Utilities.SETTINGS_PREF_NAME, 0);
         mEnableReporting = (CheckBoxPreference) prefSet.findPreference(Const.ANONYMOUS_OPT_IN);
-        mEnableReporting.setEnabled(false);
+        mEnableReporting.setEnabled(true);
         mPersistentOptout = (CheckBoxPreference) prefSet.findPreference(Const.ANONYMOUS_OPT_OUT_PERSIST);
-        mPersistentOptout.setEnabled(false);
+        mPersistentOptout.setEnabled(true);
         mViewStats = (Preference) prefSet.findPreference(PREF_VIEW_STATS);
         //btnUninstall = prefSet.findPreference(PREF_UNINSTALL);
         mPrefs.edit().putBoolean(Const.ANONYMOUS_OPT_IN, true).apply();
