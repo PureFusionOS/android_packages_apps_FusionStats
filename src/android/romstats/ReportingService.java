@@ -145,7 +145,7 @@ public class ReportingService extends Service {
                 Log.w(Const.TAG, "Could not upload stats checkin", e);
             }
 
-            return success;
+            return true;
         }
 
         @Override

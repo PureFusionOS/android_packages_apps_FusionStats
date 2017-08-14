@@ -30,7 +30,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
-import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
@@ -84,7 +83,7 @@ public class AnonymousStats extends PreferenceActivity implements
         mEnableReporting.setEnabled(true);
         mPersistentOptout = (CheckBoxPreference) prefSet.findPreference(Const.ANONYMOUS_OPT_OUT_PERSIST);
         mPersistentOptout.setEnabled(true);
-        mViewStats = (Preference) prefSet.findPreference(PREF_VIEW_STATS);
+        mViewStats = prefSet.findPreference(PREF_VIEW_STATS);
         //btnUninstall = prefSet.findPreference(PREF_UNINSTALL);
         mPrefs.edit().putBoolean(Const.ANONYMOUS_OPT_IN, true).apply();
 
@@ -96,7 +95,7 @@ public class AnonymousStats extends PreferenceActivity implements
             ReportingServiceManager.launchService(this);
         }
 
-        Preference mPrefAboutVersion = (Preference) prefSet.findPreference(PREF_ABOUT);
+        Preference mPrefAboutVersion = prefSet.findPreference(PREF_ABOUT);
         String versionString = getResources().getString(R.string.app_name);
         try {
             versionString += " v" + getPackageManager().getPackageInfo(getBaseContext().getPackageName(), 0).versionName;
@@ -105,15 +104,12 @@ public class AnonymousStats extends PreferenceActivity implements
         }
         mPrefAboutVersion.setTitle(versionString);
 
-        Preference aboutWesbite = (Preference) prefSet.findPreference(PREF_WEBSITE);
-        aboutWesbite.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-            @Override
-            public boolean onPreferenceClick(Preference preference) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.pref_info_website_url)));
-                startActivity(intent);
+        Preference aboutWesbite = prefSet.findPreference(PREF_WEBSITE);
+        aboutWesbite.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.pref_info_website_url)));
+            startActivity(intent);
 
-                return false;
-            }
+            return false;
         });
 
         Preference mPrefHolder;
@@ -237,31 +233,24 @@ public class AnonymousStats extends PreferenceActivity implements
                 new AlertDialog.Builder(this)
                         .setMessage(this.getResources().getString(R.string.anonymous_statistics_warning))
                         .setTitle(R.string.anonymous_statistics_warning_title)
-                        .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                            }
-                        }).show();
+                        .setPositiveButton(android.R.string.ok, (dialog, which) -> dialog.dismiss()).show();
                 break;
             case R.id.uninstall:
                 uninstallSelf();
                 break;
             case R.id.hideicon:
-                DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        switch (which) {
-                            case DialogInterface.BUTTON_POSITIVE:
-                                // Yes button clicked
-                                hideLauncherIcon();
-                                dialog.dismiss();
-                                break;
+                DialogInterface.OnClickListener dialogClickListener = (dialog, which) -> {
+                    switch (which) {
+                        case DialogInterface.BUTTON_POSITIVE:
+                            // Yes button clicked
+                            hideLauncherIcon();
+                            dialog.dismiss();
+                            break;
 
-                            case DialogInterface.BUTTON_NEGATIVE:
-                                // No button clicked
-                                dialog.dismiss();
-                                break;
-                        }
+                        case DialogInterface.BUTTON_NEGATIVE:
+                            // No button clicked
+                            dialog.dismiss();
+                            break;
                     }
                 };
 
@@ -281,13 +270,13 @@ public class AnonymousStats extends PreferenceActivity implements
         return super.onOptionsItemSelected(item);
     }
 
-    public void uninstallSelf() {
+    private void uninstallSelf() {
         Intent intent = new Intent(Intent.ACTION_DELETE);
         intent.setData(Uri.parse("package:" + getPackageName()));
         startActivity(intent);
     }
 
-    public void hideLauncherIcon() {
+    private void hideLauncherIcon() {
         PackageManager p = getPackageManager();
         p.setComponentEnabledSetting(getComponentName(), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
 

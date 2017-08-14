@@ -1,6 +1,6 @@
 package android.romstats;
 
-public class Const {
+class Const {
 
     public static final String TAG = "FusionStats";
 

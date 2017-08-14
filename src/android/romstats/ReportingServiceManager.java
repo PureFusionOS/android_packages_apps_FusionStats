@@ -53,7 +53,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
             return;
         }
 
-        long UPDATE_INTERVAL = Long.valueOf(Utilities.getTimeFrame()) * MILLIS_PER_DAY;
+        long UPDATE_INTERVAL = Utilities.getTimeFrame() * MILLIS_PER_DAY;
 
         if (millisFromNow <= 0) {
             long lastSynced = prefs.getLong(Const.ANONYMOUS_LAST_CHECKED, 0);
@@ -120,7 +120,7 @@ public class ReportingServiceManager extends BroadcastReceiver {
             lastSynced = 1;
         }
 
-        long UPDATE_INTERVAL = Long.valueOf(Utilities.getTimeFrame()) * MILLIS_PER_DAY;
+        long UPDATE_INTERVAL = Utilities.getTimeFrame() * MILLIS_PER_DAY;
 
         long timeLeft = System.currentTimeMillis() - lastSynced;
         if (timeLeft < UPDATE_INTERVAL) {

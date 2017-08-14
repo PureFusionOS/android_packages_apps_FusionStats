@@ -6,3 +6,6 @@
 /.project
 /lint.xml
 /.idea
+
+.idea/instapk.xml
+instapk.log*

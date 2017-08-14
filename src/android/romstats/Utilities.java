@@ -32,7 +32,7 @@ import java.net.NetworkInterface;
 import java.security.MessageDigest;
 import java.util.Locale;
 
-public class Utilities {
+class Utilities {
     public static final String SETTINGS_PREF_NAME = "ROMStats";
     public static final int NOTIFICATION_ID = 1;
 
@@ -127,7 +127,7 @@ public class Utilities {
         return Const.TIMEFRAME;
     }
 
-    public static String digest(String input) {
+    private static String digest(String input) {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
             return new BigInteger(1, md.digest(input.getBytes())).toString(16).toUpperCase(Locale.US);
@@ -182,7 +182,6 @@ public class Utilities {
                 Log.d(Const.TAG, "[checkPersistentOptOut] No persistent cookie found");
             }
         }
-        ;
 
         return false;
     }

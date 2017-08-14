@@ -46,6 +46,6 @@
             android:name="android.romstats.ReportingService"
             android:enabled="true"
             android:exported="false"
-            android:label="ReportingService"></service>
+            android:label="ReportingService" />
     </application>
 </manifest>

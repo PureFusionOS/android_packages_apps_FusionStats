@@ -24,8 +24,8 @@ package android.os;
  * {@hide}
  */
 public class SystemProperties {
-    public static final int PROP_NAME_MAX = 31;
-    public static final int PROP_VALUE_MAX = 91;
+    private static final int PROP_NAME_MAX = 31;
+    private static final int PROP_VALUE_MAX = 91;
 
     private static native String native_get(String key);
 
