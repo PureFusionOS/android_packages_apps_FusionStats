@@ -15,7 +15,7 @@ class Const {
     public static final int ROMSTATS_REPORTING_MODE_OLD = 1; // old CM10  : user prompt, default FALSE, first time immediately
 
     public static final String STATS_URL = "https://stats.purefusionos.com";
-    public static final String FUSION_VERSION = "7.1.2_r33";
+    public static final String FUSION_VERSION = "8.0.0_r17";
     public static final String ROMNAME = "PureFusionOS";
     public static final int TIMEFRAME = 1;
 }
